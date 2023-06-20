@@ -16,52 +16,61 @@
     <script src="index.js" defer></script>
   </head>
   <body>
-    <h1>Escalação de Times</h1>
-    <hr />
-    <!--Escalar Jogador-->
-    <h2>Escalar Jogador</h2>
-    <p>
-      <label for="position">Posição do Jogador :</label>
-      <input
-        type="text"
-        name="position"
-        id="position"
-        placeholder="Informe a Posição"
-      />
-      <br />
-      <br />
-      <label for="name">Nome do Jogador :</label>
-      <input type="text" name="name" id="name" placeholder=" Informe o nome" />
-      <br />
-      <br />
-      <label for="camisa">Número da Camisa :</label>
-      <input
-        type="number"
-        name="camisa"
-        id="camisa"
-        placeholder="Informe o número"
-      />
-      <button onclick="addPlayer()">Escalar Jogador</button>
-    </p>
+    <section class="escalar">
+      <h1>Escalação de Times</h1>
+      <hr />
+      <!--Escalar Jogador-->
+      <h2>Escalar Jogador</h2>
+      <p>
+        <label for="position">Posição do Jogador :</label>
+        <input
+          type="text"
+          name="position"
+          id="position"
+          placeholder="Informe a Posição"
+        />
+        <br />
+        <br />
+        <label for="name">Nome do Jogador :</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder=" Informe o nome"
+        />
+        <br />
+        <br />
+        <label for="camisa">Número da Camisa :</label>
+        <input
+          type="number"
+          name="camisa"
+          id="camisa"
+          placeholder="Informe o número"
+        />
+        <button onclick="addPlayer()">Escalar Jogador</button>
+      </p>
+    </section>
 
     <br />
 
     <!--Remover Jogador-->
-    <h2>Remover Jogador</h2>
-    <p>
-      <label for="remove">Número :</label>
-      <input
-        type="number"
-        name="remove"
-        id="remove"
-        placeholder="Informe o número"
-      />
-      <button onclick="removePlayer()">Remover Jogador</button>
-    </p>
-    <br />
+    <section class="remover">
+      <h2>Remover Jogador</h2>
+      <p>
+        <label for="remove">Número :</label>
+        <input
+          type="number"
+          name="remove"
+          id="remove"
+          placeholder="Informe o número"
+        />
+        <button onclick="removePlayer()">Remover Jogador</button>
+      </p>
+      <br />
 
-    <h2>Escalação de Time</h2>
-    <!--Lista para armazenar jogadores escalados-->
-    <ul id="playerList"></ul>
+      <h2>Escalação de Time</h2>
+      <!--Lista para armazenar jogadores escalados-->
+      <ul id="playerList"></ul>
+    </section>
   </body>
 </html>
